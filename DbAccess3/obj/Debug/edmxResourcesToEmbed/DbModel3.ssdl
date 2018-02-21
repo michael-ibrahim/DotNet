@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Task3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="goal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="text" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="lesson">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="text" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="question">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="lesson" Type="int" />
+    <Property Name="goal" Type="int" />
+    <Property Name="text" Type="nchar" MaxLength="50" />
+    <Property Name="answer1" Type="nchar" MaxLength="20" />
+    <Property Name="answer2" Type="nchar" MaxLength="20" />
+    <Property Name="answer3" Type="nchar" MaxLength="20" />
+    <Property Name="answer4" Type="nchar" MaxLength="20" />
+    <Property Name="correct" Type="int" />
+  </EntityType>
+  <EntityContainer Name="Task3ModelStoreContainer">
+    <EntitySet Name="goal" EntityType="Self.goal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lesson" EntityType="Self.lesson" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="question" EntityType="Self.question" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

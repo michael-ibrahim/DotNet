@@ -1,0 +1,11 @@
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\bin\Debug\DbAccess3.dll.config
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\bin\Debug\DbAccess3.dll
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\bin\Debug\DbAccess3.pdb
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\bin\Debug\EntityFramework.dll
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\bin\Debug\EntityFramework.xml
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\obj\Debug\DbAccess3.csproj.CoreCompileInputs.cache
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\obj\Debug\DbAccess3.dll
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\obj\Debug\DbAccess3.pdb
+c:\users\mike\source\repos\QuestionsApp\DbAccess3\obj\Debug\DbAccess3.csprojResolveAssemblyReference.cache

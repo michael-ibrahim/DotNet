@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Task3ModelStoreContainer" CdmEntityContainer="Task3Entities">
+    <EntitySetMapping Name="goals">
+      <EntityTypeMapping TypeName="Task3Model.goal">
+        <MappingFragment StoreEntitySet="goal">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="text" ColumnName="text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lessons">
+      <EntityTypeMapping TypeName="Task3Model.lesson">
+        <MappingFragment StoreEntitySet="lesson">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="text" ColumnName="text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questions">
+      <EntityTypeMapping TypeName="Task3Model.question">
+        <MappingFragment StoreEntitySet="question">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="lesson" ColumnName="lesson" />
+          <ScalarProperty Name="goal" ColumnName="goal" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="answer1" ColumnName="answer1" />
+          <ScalarProperty Name="answer2" ColumnName="answer2" />
+          <ScalarProperty Name="answer3" ColumnName="answer3" />
+          <ScalarProperty Name="answer4" ColumnName="answer4" />
+          <ScalarProperty Name="correct" ColumnName="correct" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

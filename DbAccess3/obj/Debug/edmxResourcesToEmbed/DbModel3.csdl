@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Task3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="goal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="text" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="lesson">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="text" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="question">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="lesson" Type="Int32" />
+    <Property Name="goal" Type="Int32" />
+    <Property Name="text" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="answer1" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="answer2" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="answer3" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="answer4" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="correct" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="Task3Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="goals" EntityType="Self.goal" />
+    <EntitySet Name="lessons" EntityType="Self.lesson" />
+    <EntitySet Name="questions" EntityType="Self.question" />
+  </EntityContainer>
+</Schema>
